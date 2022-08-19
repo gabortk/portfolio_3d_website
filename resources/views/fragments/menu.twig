@@ -1,0 +1,48 @@
+<header class="main-header secondary-black" uk-sticky="show-on-up: true; animation: uk-animation-slide-top">
+
+    <div class="uk-container">
+        <nav class="uk-navbar-transparent" data-uk-navbar>
+            <div class="uk-navbar-left uk-hidden@l">
+                <a href="/">
+                    <img src="{{ url }}assets/img/svg/3D_mobile.svg">
+                    <img class="uk-margin-small" src="{{ url }}assets/img/svg/concept_mobile.svg">
+                </a>
+            </div>
+            <div class="uk-navbar-left uk-visible@l uk-padding-small">
+                <a href="/"><img src="{{ url }}assets/img/svg/3D_concept.svg"></a>
+            </div>
+            <div class="uk-navbar-right">
+                <ul class="uk-navbar-nav uk-text-bold uk-visible@s">
+                    <li class="uk-visible@m"><a href="/" data-uk-icon="home"></a></li>
+                    <li><a href="/rolunk">Bemutatkozás</a></li>
+                    <li><a href="/anyagok">Anyagok</a></li>
+                    <li><a href="/szolgaltatasok">Termékek</a></li>
+                    <li><a href="/kapcsolat">Kapcsolat</a></li>
+                </ul>
+                <a class="uk-navbar-toggle uk-navbar-item uk-hidden@s" data-uk-toggle data-uk-navbar-toggle-icon href="#offcanvas-nav"></a>
+            </div>
+
+        </nav>
+    </div>
+
+    <!-- OFFCANVAS -->
+    <div id="offcanvas-nav" data-uk-offcanvas="flip: true; overlay: false">
+        <div class="uk-offcanvas-bar uk-offcanvas-bar-animation uk-offcanvas-slide">
+            <button class="uk-offcanvas-close uk-close uk-icon" type="button" data-uk-close></button>
+            <ul class="uk-nav uk-nav-default">
+                <li class="uk-nav-header"><a href="/"><img src="{{ url }}assets/img/printing.png"></a></li>
+                <li class="uk-nav-divider"></li>
+                <li class=""><a href="/" data-uk-icon="home"></a></li>
+                <li><a href="/rolunk"> Bemutatkozás</a></li>
+                <li><a href="/anyagok">Anyagok</a></li>
+                <li><a href="/szolgaltatasok"> Termékek</a></li>
+                <li><a href="/kapcsolat">Kapcsolat</a></li>
+            </ul>
+            <h3>Vízió</h3>
+            <p>A teremtés vágya egyidős az emberiséggel. Létrehozni valami újat mindig nagyszerű dolog.</p>
+        </div>
+    </div>
+    <!-- /OFFCANVAS -->
+
+</header>
+<!--/HEADER-->

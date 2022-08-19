@@ -1,0 +1,138 @@
+{% extends '@templates/layouts/app.twig' %}
+
+{% block title %}
+3Dconcept.hu - nyomtatás, prototípusok, egyedi alkatrészek
+{% endblock %}
+
+{% block content %}
+<section class="uk-height-large uk-background-cover uk-flex main-hero" uk-height-viewport uk-parallax="bgy: -200" style="background-image: url('assets/img/hero.jpg');" title="Fotó: Kanhaiya Sharma">
+    <div class="uk-container uk-text-center uk-margin-auto uk-margin-auto-vertical uk-width-1-1">
+        <h1 class="text-white">3D nyomtatás, prototípusok, egyedi alkatrészek</h1>
+        <section class="uk-section">
+            <h2 class="h2-element uk-text-center uk-padding-small text-white">Kiemelt termékek</h2>
+            <div class="uk-container">
+                <div class="uk-child-width-1-3@m" uk-grid>
+                    <div class="uk-position-relative uk-visible-toggle uk-light uk-slideshow" tabindex="-1" uk-slideshow="animation: slide, autoplay: true">
+                        <ul class="uk-slideshow-items">
+                            <li>
+                                <img src="{{ url }}assets/img/termekek/nobg1.png" alt="Buddha">
+                            </li>
+                            <li>
+                                <img src="{{ url }}assets/img/termekek/nobg8.png" alt="Wedding">
+                            </li>
+                            {# <li>
+                                <img src="{{ url }}assets/img/termekek/filaflex.png" alt="Filaflex">
+                            </li> #}
+                        </ul>
+                        <a class="uk-position-center-left uk-position-small uk-hidden-hover" style="color: #0094ff;" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+                        <a class="uk-position-center-right uk-position-small uk-hidden-hover" style="color: #0094ff;" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+                    </div>
+                    <div class="uk-position-relative uk-visible-toggle uk-light uk-slideshow" tabindex="-1" uk-slideshow="animation: slide, autoplay: true">
+                        <ul class="uk-slideshow-items">
+                            <li>
+                                <img src="{{ url }}assets/img/termekek/nobg2.png" alt="Marokcsvar">
+                            </li>
+                            <li>
+                                <img src="{{ url }}assets/img/termekek/nobg3.png" alt="Kulcs">
+                            </li>
+                            {# <li>
+                                <img src="{{ url }}assets/img/termekek/filaflex.png" alt="Filaflex">
+                            </li> #}
+                        </ul>
+                        <a class="uk-position-center-left uk-position-small uk-hidden-hover" style="color: #0094ff;" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+                        <a class="uk-position-center-right uk-position-small uk-hidden-hover" style="color: #0094ff;" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+                    </div>
+                    <div class="uk-position-relative uk-visible-toggle uk-light uk-slideshow" tabindex="-1" uk-slideshow="animation: slide, autoplay: true">
+                        <ul class="uk-slideshow-items">
+                            <li>
+                                <img src="{{ url }}assets/img/termekek/ecoPLA.png" alt="ecoPLA">
+                            </li>
+                            <li>
+                                <img src="{{ url }}assets/img/termekek/petg.png" alt="PET/PETG">
+                            </li>
+                            <li>
+                                <img src="{{ url }}assets/img/termekek/filaflex.png" alt="Filaflex">
+                            </li>
+                        </ul>
+                        <a class="uk-position-center-left uk-position-small uk-hidden-hover" style="color: #0094ff;" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+                        <a class="uk-position-center-right uk-position-small uk-hidden-hover" style="color: #0094ff;" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-padding-large">
+                <a href="/szolgaltatasok" class="uk-text-center slider-link" uk-icon="icon: arrow-right; ratio: 1.5">Tovább a termékekhez</a>
+            </div>
+        </section>
+    </div>
+</section>
+<section class="uk-section uk-section-default main-materials">
+    <h2 class="h2-element uk-text-center uk-padding-small">Rólam</h2>
+    <div class="uk-container uk-text-center">
+        <p class="uk-text-center">
+            Számtalan esetben fordult elő, hogy egy adott termék sorozatgyártását megelőzően szükséges volt néhány prototípus gyártása, hogy a módosításokat követően már a hibátlan és tökéletes termék kerüljön gyártásba. A 3D nyomtatásnak köszönhetően nagy mértékben voltak csökkenthetőek költségek.
+        </p>
+        <a href="/rolunk" class="secondary-btn uk-button uk-button-primary uk-border-pill uk-icon uk-button-large" data-uk-icon="arrow-right">Bővebben
+            <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="arrow-right">
+                <polyline fill="none" stroke="#000" points="10 5 15 9.5 10 14"></polyline>
+                <line fill="none" stroke="#000" x1="4" y1="9.5" x2="15" y2="9.5"></line>
+            </svg>
+        </a>
+    </div>
+</section>
+<hr class="uk-divider-icon uk-margin-large">
+<section class="uk-section uk-section-default main-materials">
+    <h2 class="h2-element uk-text-center uk-padding-small">Kiemelt anyagok</h2>
+    <div class="uk-container">
+        <div class="uk-child-width-1-3@m" uk-grid>
+            <div class="uk-position-relative uk-visible-toggle uk-light uk-slideshow" tabindex="-1" uk-slideshow="animation: slide, autoplay: true">
+                <ul class="uk-slideshow-items">
+                    <li>
+                        <img uk-cover src="{{ url }}assets/img/anyagok/ecoPLA.png" alt="ecoPLA">
+                    </li>
+                    <li>
+                        <img uk-cover src="{{ url }}assets/img/anyagok/petg.png" alt="PET/PETG">
+                    </li>
+                    <li>
+                        <img uk-cover src="{{ url }}assets/img/anyagok/filaflex.png" alt="Filaflex">
+                    </li>
+                </ul>
+                <a class="uk-position-center-left uk-position-small uk-hidden-hover" style="color: #0094ff;" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+                <a class="uk-position-center-right uk-position-small uk-hidden-hover" style="color: #0094ff;" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+            </div>
+            <div class="uk-position-relative uk-visible-toggle uk-light uk-slideshow" tabindex="-1" uk-slideshow="animation: slide, autoplay: true">
+                <ul class="uk-slideshow-items">
+                    <li>
+                        <img uk-cover src="{{ url }}assets/img/anyagok/asa.png" alt="Asa">
+                    </li>
+                    <li>
+                        <img uk-cover src="{{ url }}assets/img/anyagok/abs.png" alt="Abs">
+                    </li>
+                    <li>
+                        <img uk-cover src="{{ url }}assets/img/anyagok/pc.png" alt="Pc">
+                    </li>
+                </ul>
+                <a class="uk-position-center-left uk-position-small uk-hidden-hover" style="color: #0094ff;" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+                <a class="uk-position-center-right uk-position-small uk-hidden-hover" style="color: #0094ff;" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+            </div>
+            <div class="uk-position-relative uk-visible-toggle uk-light uk-slideshow" tabindex="-1" uk-slideshow="animation: slide, autoplay: true">
+                <ul class="uk-slideshow-items">
+                    <li>
+                        <img uk-cover src="{{ url }}assets/img/anyagok/PLA Extrafill.png" alt="Extrafill">
+                    </li>
+                    <li>
+                        <img uk-cover src="{{ url }}assets/img/anyagok/TPUa95.png" alt="Tpu">
+                    </li>
+                    <li>
+                        <img uk-cover src="{{ url }}assets/img/anyagok/ecoplaglow.png" alt="Glow">
+                    </li>
+                </ul>
+                <a class="uk-position-center-left uk-position-small uk-hidden-hover" style="color: #0094ff;" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+                <a class="uk-position-center-right uk-position-small uk-hidden-hover" style="color: #0094ff;" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+            </div>
+        </div>
+        <div class="uk-padding-large uk-text-center">
+            <a href="/anyagok" class="slider-link" uk-icon="icon: arrow-right; ratio: 1.5">Tovább az anyagokhoz</a>
+        </div>
+    </div>
+</section>
+{% endblock %}

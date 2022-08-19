@@ -1,0 +1,13 @@
+/vendor
+.env
+.idea
+
+/.idea
+application.log
+
+public/assets/js/main.js
+public/assets/css/main.css
+public/assets/css/main.css.map
+public/assets/js/main.js.LICENSE.txt
+
+node_modules

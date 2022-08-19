@@ -1,0 +1,19 @@
+.primary-btn {
+    transition: 0.3s;
+    background-color: $primary-color !important;
+    color: $white !important;
+        &:hover {
+            background-color: $gray !important;
+            color: $primary-black !important;
+        }
+}
+
+.secondary-btn {
+    transition: 0.3s;
+    background-color: $purple !important;
+    color: $white !important;
+        &:hover {
+            background-color: $gray !important;
+            color: $primary-black !important;
+        }
+}

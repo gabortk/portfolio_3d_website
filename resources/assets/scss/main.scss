@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+html {scroll-behavior:smooth}
+// 1. Your custom variables and variable overwrites.
+@import "_variables";
+@import "_typography";
+@import "_buttons";
+@import "_tooltip";
+@import "_header";
+@import "contact";
+
+.secondary-black {
+  background-color: $secondary-black;
+}
+
+.text-white {
+  color: $white;
+}
+
+.primary-blue {
+  color: $primary-color;
+}
+
+body {
+  font: 100% $font-stack;
+  color: $primary-black;
+}
+
+a {
+  color: $primary-color;
+}
+
+.main-hero {
+  a.slider-link {
+    color: $white;
+    font-size: 1.5rem;
+    text-decoration: underline;
+    &:hover {
+      color: $light-blue;
+    }
+  }
+}
+
+.main-materials {
+  a.slider-link {
+    color: $primary-black;
+    font-size: 1.5rem;
+    text-decoration: underline;
+    &:hover {
+      color: $purple;
+    }
+  }
+}
+
+.services {
+  .uk-card-title {
+    min-height: 80px;
+  }
+}
+
+// 2. Import default variables and available mixins.
+@import "../../../node_modules/uikit/src/scss/variables.scss";
+@import "../../../node_modules/uikit/src/scss/mixins.scss";
+
+// 3. Your custom mixin overwrites.
+
+// ... import all
+
+// 4. Import UIkit
+@import "../../../node_modules/uikit/src/scss/uikit.scss";
+

@@ -1,0 +1,76 @@
+{% extends '@templates/layouts/app.twig' %}
+
+{% block title %}
+Anyagok
+{% endblock %}
+
+{% block content %}
+
+
+<section class="uk-height-medium uk-background-cover">
+    <div class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light" title="Fotó: Kanhaiya Sharma" data-src="assets/img/hero.jpg" uk-img>
+        <h1>Anyagok</h1>
+    </div>
+</section>
+<section id="content" class="uk-section uk-section-default">
+    <div class="uk-container">
+        <section>
+            <h3>Általánosságban elmondható, hogy a Filamentek színválasztéka típusonként is rendkívül sokrétű,
+                így ennek megfelelően bárki találhat kedvének, ízlésének megfelelőt. Válassza ki a típust és azon belül a színt!
+            </h3>
+            <div class="uk-child-width-1-4@m" uk-grid uk-scrollspy="cls: uk-animation-fade; target: .uk-card; delay: 250; repeat: false">
+                <div>
+                    <div class="uk-card uk-card-default uk-card-body">
+                        <img src="{{ url }}assets/img/anyagok/ecoPLA.png" alt="ecoPLA">
+                        <button class="uk-button uk-button-default" uk-tooltip="title: Hello World; testclass">Hover</button>
+                        <h2 class="uk-card-title">eco<button class="pr-tooltip" uk-tooltip="title:A legnépszerűbb nyomtatási anyag az FDM 3D-nyomtatás területén. A PLA Filament (polilaktikus sav) könnyen nyomtatható.; pos: bottom;">PLA</button></h2>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default uk-card-body">
+                        <img src="{{ url }}assets/img/anyagok/petg.png" alt="PET/PETG">
+                        <h2 class="uk-card-title">PET/PETG<button class="pr-tooltip" uk-tooltip="title:A 'G' jelentése glikol-módosított. Ez a módosítás a Filament tisztább, kevésbé törékeny és könnyebb használatát teszi lehetővé. A PETG jó közép alternatíva az ABS és a PLA között.; pos: bottom">PET</button></h2>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default uk-card-body">
+                        <img src="{{ url }}assets/img/anyagok/filaflex.png" alt="Filaflex">
+                        <h2 class="uk-card-title">Filaflex<button class="pr-tooltip" uk-tooltip="title:A Filaflex egy elasztikus Filament 3D-s nyomtatáshoz. Az anyag TPE-ből és néhány adalékanyagból áll. A Filaflex hihetetlen rugalmassággal rendelkezik.; pos: bottom">elastic</button></h2>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default uk-card-body">
+                        <img src="{{ url }}assets/img/anyagok/TPUa95.png" alt="TPU A95">
+                        <h2 class="uk-card-title">TPU<button class="pr-tooltip" uk-tooltip="title:Flexibilis filamentek gumiszerű tulajdonságokkal. A filamentek általában puhák és rugalmasak, így ellenállnak a nagy terheléseknek is.; pos: bottom">A95</button></h2>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default uk-card-body">
+                        <img src="{{ url }}assets/img/anyagok/abs.png" alt="ABS">
+                        <h2 class="uk-card-title">ABS<button class="pr-tooltip" uk-tooltip="title:Akrilnitril-butadién-sztirol (ABS) a PLA után a második legnépszerűbb 3D-nyomtatószál. Az ABS Filamentet nehezebb feldolgozni, mint a normál PLA-t. Az ABS a PLA-hoz képest az anyagi tulajdonságokban jobb. Az ABS Filamenttel nyomtatott termékeket nagy tartósság és magas hőállóság jellemzi. Az ABS nagyobb feldolgozási hőmérsékletet és fűtött tárgyasztalt igényel. Az anyag szálasodásra hajlamos.; pos: bottom">nice</button></h2>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default uk-card-body">
+                        <img src="{{ url }}assets/img/anyagok/pc.png" alt="PC">
+                        <h2 class="uk-card-title">PC<button class="pr-tooltip" uk-tooltip="title:A polikarbonát (PC) az egyik legerősebb, legtartósabb és legellenállóbb anyag. A PC technikai tulajdonságai mellett magas hőmérséklet ellenállást mutat.; pos: bottom">PolyLite</button></h2>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default uk-card-body">
+                        <img src="{{ url }}assets/img/anyagok/ecoplaglow.png" alt="GLOW">
+                        <h2 class="uk-card-title">EcoPLA<button class="pr-tooltip" uk-tooltip="title:Floureszkáló anyag a Filamentben, amely éjszaka világít. Az anyag többnyire PLA vagy ABS. A foszforeszkáló részecskéknek köszönhetően a modell a sötétben világít. Ehhez azonban a modellnek fényre van szüksége, mivel a fotonok felszívják a sugarakat. A legjobb eredmény vastag falakkal érhető el. Minél vastagabbak a fal, annál erőteljesebb a fény.; pos: bottom">Glow</button></h2>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default uk-card-body">
+                        <img src="{{ url }}assets/img/anyagok/asa.png" alt="ASA">
+                        <h2 class="uk-card-title">ASA<button class="pr-tooltip" uk-tooltip="title:Akrilnitril-sztirol-akrilát (ASA) az ABS egy kiváló alternatívája. Az ASA egy 3D-Filament, amely erős, merev és viszonylag könnyen nyomtatható. Az anyag ugyancsak rendkívül ellenálló a kémiai anyagokkal és a hővel szemben.; pos: bottom">Extrafill</button></h2>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </div>
+</section>
+{% endblock %}

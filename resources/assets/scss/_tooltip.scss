@@ -1,0 +1,13 @@
+.uk-card-title {
+    position: relative;
+    button.pr-tooltip {
+        background-color: $primary-color;
+        color: $white;
+        border: none;
+        padding: 0.2rem 0.4rem;
+        border-radius: 15px;
+        margin-left: 0.5rem;
+        position: absolute;
+        top: 0;
+    }
+}

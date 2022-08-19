@@ -1,0 +1,127 @@
+{% extends '@templates/layouts/app.twig' %}
+
+{% block title %}
+    Termékek
+{% endblock %}
+
+{% block content %}
+
+
+<section class="uk-height-medium uk-background-cover">
+    <div class="uk-height-medium uk-flex uk-flex-center uk-flex-middle uk-background-cover uk-light" title="Fotó: Kanhaiya Sharma" data-src="assets/img/hero.jpg" uk-img>
+        <h1>Termékek</h1>
+    </div>
+</section>
+<section id="content" class="uk-section uk-section-default services">
+    <div class="uk-container">
+        <section>
+            <div class="uk-child-width-1-4@m" uk-grid uk-scrollspy="cls: uk-animation-fade; target: .uk-card; delay: 250; repeat: false">
+                <div>
+                    <div class="uk-card uk-card-default uk-card-body">
+                        <img src="{{ url }}assets/img/termekek/termek1.png" alt="Buddha">
+                        <h2 class="uk-card-title">Buddha</h2>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default uk-card-body">
+                    <img src="{{ url }}assets/img/termekek/termek2.jpg" alt="Csavar">
+                    <h2 class="uk-card-title">Marok csavar és marok anya</h2>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default uk-card-body">
+                    <img src="{{ url }}assets/img/termekek/termek3.png" alt="Kulcs">
+                    <h2 class="uk-card-title">Elektromos szekrény kulcs</h2>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default uk-card-body">
+                    <img src="{{ url }}assets/img/termekek/termek4.jpg" alt="Kupak">
+                    <h2 class="uk-card-title">Bútorláb kupak</h2>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default uk-card-body">
+                    <img src="{{ url }}assets/img/termekek/termek5.png" alt="Telefon tartó">
+                    <h2 class="uk-card-title">Telefon tartó</h2>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default uk-card-body">
+                    <img src="{{ url }}assets/img/termekek/termek6.png" alt="Alkatrész">
+                    <h2 class="uk-card-title">Törött alkatrész pótlása</h2>
+                    </div>
+                </div>
+                 <div>
+                    <div class="uk-card uk-card-default uk-card-body">
+                    <img src="{{ url }}assets/img/termekek/termek7.png" alt="Tábla">
+                    <h2 class="uk-card-title">Palánta tábla</h2>
+                    </div>
+                </div>
+                 <div>
+                    <div class="uk-card uk-card-default uk-card-body">
+                    <img src="{{ url }}assets/img/termekek/termek8.jpg" alt="Torta dísz">
+                    <h2 class="uk-card-title">Floureszkáló tortadísz</h2>
+                    </div>
+                </div>
+                <div>
+                    <div class="uk-card uk-card-default uk-card-body">
+                    <img src="{{ url }}assets/img/termekek/termek10.png" alt="Üstökös nap hold">
+                    <h2 class="uk-card-title">Floureszkáló falidísz 1</h2>
+                    </div>
+                </div>
+                 <div>
+                    <div class="uk-card uk-card-default uk-card-body">
+                    <img src="{{ url }}assets/img/termekek/termek11.png" alt="Üstökös nap hold">
+                    <h2 class="uk-card-title">Floureszkáló falidísz 2</h2>
+                    </div>
+                </div>
+                 <div>
+                    <div class="uk-card uk-card-default uk-card-body">
+                    <img src="{{ url }}assets/img/termekek/termek12.png" alt="Pillangók">
+                    <h2 class="uk-card-title">Floureszkáló pillangók</h2>
+                    </div>
+                </div>
+                 <div>
+                    <div class="uk-card uk-card-default uk-card-body">
+                    <img src="{{ url }}assets/img/termekek/termek13.png" alt="Elem tartó">
+                    <h2 class="uk-card-title">Elem tartó láda</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr class="uk-divider-icon uk-margin-large">
+         <section>
+            <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+                <div class="uk-card-media-left uk-cover-container">
+                    <img src="{{ url }}assets/img/termekek/termek12.png" alt="Pillangók" uk-cover>
+                    <img src="{{ url }}assets/img/termekek/termek11.png" alt="Üstökös nap hold" uk-cover> 
+                    <canvas width="600" height="400"></canvas>
+                </div>
+                <div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Gyermekek kedvence</h3>
+                        <p>Igazán barátságossá tehetjük gyermekeink hálószobáját néhány floureszkáló motívummal.</p>
+                        <p>Ezek után nem kell félniük a sötétben, mert álmukat vidám alakzatok vigyázzák majd. </p>
+                        <p>Néhány ügyesen elhelyezett pillangó, üstökös, hold vagy akár kacagó napocska a nyugalom szigetét biztosítja majd a kicsiknek.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-card uk-card-default uk-grid-collapse uk-child-width-1-2@s uk-margin" uk-grid>
+                <div class="uk-flex-last@s uk-card-media-right uk-cover-container">
+                    <img src="{{ url }}assets/img/termekek/termek9.png" alt="Oximoron" uk-cover>
+                    <canvas width="600" height="400"></canvas>
+                </div>
+                <div>
+                    <div class="uk-card-body">
+                        <h3 class="uk-card-title">Oximoron</h3>
+                        <p>Az oximoron nem más, mint egymást kizáró, egymásnak ellentmondó fogalmaknak az összekapcsolása.</p>
+                        <p>Mit látsz a képen?</p>
+                        <p>Ez most jó vagy rossz?</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</section>
+{% endblock %}

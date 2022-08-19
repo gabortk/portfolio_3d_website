@@ -1,0 +1,29 @@
+.contact-title {
+    font-size: 1.8rem;
+    color: $primary-color;
+    a {
+        color: $primary-color;
+    }
+}
+
+.main-footer {
+    .contact-title {
+        font-size: 1rem;
+        color: $white;
+        a {
+            color: $white;
+        }    
+        color: $white;
+        svg {
+            width: 1.3rem;
+            height: 1.3rem;
+        }
+    }
+
+    .footer-logo {
+        max-width: 60px;
+        @media all and (min-width: 768px) {
+            max-width: 80px;
+        }
+    }
+}

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--><html
+    class="no-js"> <!--<![endif]-->
+</html>
+<html lang="hu">
+    {% set url = "/" %}
+
+    <head>
+
+        <!-- Basic Page Needs
+                            –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>
+            {% block title %}{% endblock %}
+        </title>
+        <meta
+        name="description" content="3D nyomtatás">
+
+        <!-- Facebook Open Graph, Google+ and Twitter Card Tags 1.5.1
+                            –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <meta property="og:site_name" content=""/>
+        <meta property="og:locale" content="en_US"/>
+        <meta property="og:title" content=""/>
+        <meta itemprop="name" content=""/>
+        <meta property="og:url" content=""/>
+        <meta property="og:type" content=""/>
+        <meta property="og:description" content=""/>
+        <meta itemprop="description" content=""/>
+        <meta property="og:image" content=""/>
+        <meta
+        itemprop="image" content=""/>
+
+        <!-- Author
+                            –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <link href="" rel="author"/>
+        <link
+        href="" rel="publisher"/>
+
+        <!-- SEO
+                            –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <meta
+        name="robots" content="noodp,noydir"/>
+
+        <!-- Mobile Specific Metas
+                            –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <meta
+        name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- FONT
+                            –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <link href="https://fonts.googleapis.com/css?family=Raleway:200,400,300,600" rel="stylesheet">
+        <link
+        href="https://fonts.googleapis.com/css?family=Staatliches&amp;subset=latin-ext" rel="stylesheet">
+
+        <!-- CSS
+                            –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+        <link rel="stylesheet" href="{{ url }}assets/css/main.css">
+        {% block css %}
+            <style>
+                #overlay {
+                    height: 100vh;
+                    width: 100vw;
+                    background: rgba(255, 255, 255, 1);
+                    position: fixed;
+                    left: 0;
+                    top: 0;
+                    z-index: 3000;
+                }
+
+                .spinner {
+                    width: 80px;
+                    height: 80px;
+
+                    border: 2px solid #f3f3f3;
+                    border-top: 3px solid #03895d;
+                    border-radius: 100%;
+
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    margin: auto;
+
+                    animation: spin 1s infinite linear;
+                }
+
+                @keyframes spin {
+                    from {
+                        transform: rotate(0deg);
+                    }
+
+                    to {
+                        transform: rotate(360deg);
+                    }
+                }
+            </style>
+        {% endblock %}
+
+        <!-- Favicon
+                            –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <link rel="apple-touch-icon" sizes="57x57" href="{{ url }}assets/img/favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="{{ url }}assets/img/favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="{{ url }}assets/img/favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="{{ url }}assets/img/favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="{{ url }}assets/img/favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="{{ url }}assets/img/favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="{{ url }}assets/img/favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="{{ url }}assets/img/favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="{{ url }}assets/img/favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="{{ url }}assets/img/favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="{{ url }}assets/img/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="{{ url }}assets/img/favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="{{ url }}assets/img/favicon/favicon-16x16.png">
+        <link rel="manifest" href="{{ url }}assets/img/favicon/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="{{ url }}assets/img/favicon/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+
+
+    </head>
+
+    <body>
+        {# <div id="overlay">
+                            <div class="spinner"></div>
+                        </div> #}
+
+        {% include('@templates/fragments/menu.twig') %}
+
+        {% block content %}{% endblock %}
+
+        <footer class="main-footer secondary-black text-white uk-section uk-padding-remove-bottom uk-flex uk-flex-column uk-flex-last" uk-sticky="top: 100vh">
+            <div class="uk-container">
+                <div uk-grid>
+                    <div class="uk-width-2-3@m">
+                        <div uk-grid>
+                            <div class="uk-width-1-3@m">
+                                <a href="/"><img class="uk-width-1-1 footer-logo" src="{{ url }}assets/img/3D.png" width="200" height="200" alt="Logo"></a>
+                                <blockquote class="uk-text-small">
+                                    <p class="uk-margin-remove-bottom uk-margin-small-top">Az ember legszigorúbb kritikusa nagyon sok esetben saját maga.</p>
+                                    <p class="uk-margin-small-top">"Csíkszentmihályi Mihály"</p>
+                                </blockquote>
+                            </div>
+                            <div class="uk-width-2-3@m">
+                                <p class="uk-text-small">Telek Gábor szoftverfejlesztő, 3D tervező vagyok. Közel 35 éve dolgozom az iparban, azon belül a fémipari ágazatban. Ebben a szegmensben szerzett sokéves tapasztalatomat sikerrel tudom kamatoztatni a számítógépes tervezés és modellezés területén egyaránt.</p>
+                                <blockquote class="uk-text-small">
+                                    <p class="uk-margin-remove-bottom uk-margin-small-top">A technológia nem az ember ellensége, hanem éppenséggel az emberi természet része.</p>
+                                    <p class="uk-margin-small-top">"Paolo Benanti"</p>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="uk-width-1-3@m" uk-grid>
+                        <div class="uk-width-1-4@m"></div>
+                        <div class="uk-width-3-4@m">
+                            <h5 class="text-white">KAPCSOLAT</h5>
+                            <ul class="uk-list">
+                                <li>
+                                    <p class="contact-title">
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="40" height="40" preserveaspectratio="xMidYMid meet" viewbox="0 0 28 28">
+                                                <path fill="currentColor" d="M6.25 5h15.5a3.25 3.25 0 0 1 3.245 3.066L25 8.25v11.5a3.25 3.25 0 0 1-3.066 3.245L21.75 23H6.25a3.25 3.25 0 0 1-3.245-3.066L3 19.75V8.25a3.25 3.25 0 0 1 3.066-3.245L6.25 5h15.5h-15.5Zm17.25 5.905l-9.154 4.76a.75.75 0 0 1-.58.047l-.112-.047l-9.154-4.76v8.845a1.75 1.75 0 0 0 1.606 1.744l.144.006h15.5a1.75 1.75 0 0 0 1.744-1.607l.006-.143v-8.845ZM21.75 6.5H6.25a1.75 1.75 0 0 0-1.744 1.606L4.5 8.25v.964l9.5 4.94l9.5-4.94V8.25a1.75 1.75 0 0 0-1.607-1.744L21.75 6.5Z"/>
+                                            </svg>
+                                        </span>
+                                        <a href="mailto:dddprint22@gmail.com">dddprint22@gmail.com</a>
+                                    </p>
+                                </li>
+                                <li>
+                                    <p class="contact-title">
+                                        <span>
+                                            <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="40" height="40" preserveaspectratio="xMidYMid meet" viewbox="0 0 16 16">
+                                                <g fill="currentColor">
+                                                    <path d="M11 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h6zM5 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H5z"/>
+                                                    <path d="M8 14a1 1 0 1 0 0-2a1 1 0 0 0 0 2z"/>
+                                                </g>
+                                            </svg>
+                                        </span>
+                                        <a href="tel:+36305613577">+36 30 561 3577</a>
+                                    </p>
+                                </li>
+                            </ul>
+                            <div>
+                                <a href="#" class="uk-icon-button uk-icon" data-uk-icon="twitter">
+                                    <svg width="20" height="20" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="twitter">
+                                        <path d="M19,4.74 C18.339,5.029 17.626,5.229 16.881,5.32 C17.644,4.86 18.227,4.139 18.503,3.28 C17.79,3.7 17.001,4.009 16.159,4.17 C15.485,3.45 14.526,3 13.464,3 C11.423,3 9.771,4.66 9.771,6.7 C9.771,6.99 9.804,7.269 9.868,7.539 C6.795,7.38 4.076,5.919 2.254,3.679 C1.936,4.219 1.754,4.86 1.754,5.539 C1.754,6.82 2.405,7.95 3.397,8.61 C2.79,8.589 2.22,8.429 1.723,8.149 L1.723,8.189 C1.723,9.978 2.997,11.478 4.686,11.82 C4.376,11.899 4.049,11.939 3.713,11.939 C3.475,11.939 3.245,11.919 3.018,11.88 C3.49,13.349 4.852,14.419 6.469,14.449 C5.205,15.429 3.612,16.019 1.882,16.019 C1.583,16.019 1.29,16.009 1,15.969 C2.635,17.019 4.576,17.629 6.662,17.629 C13.454,17.629 17.17,12 17.17,7.129 C17.17,6.969 17.166,6.809 17.157,6.649 C17.879,6.129 18.504,5.478 19,4.74"></path>
+                                    </svg>
+                                </a>
+                                <a href="#" class="uk-icon-button uk-icon" data-uk-icon="facebook">
+                                    <svg width="20" height="20" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="facebook">
+                                        <path d="M11,10h2.6l0.4-3H11V5.3c0-0.9,0.2-1.5,1.5-1.5H14V1.1c-0.3,0-1-0.1-2.1-0.1C9.6,1,8,2.4,8,5v2H5.5v3H8v8h3V10z"></path>
+                                    </svg>
+                                </a>
+                                <a href="#" class="uk-icon-button uk-icon" data-uk-icon="instagram">
+                                    <svg width="20" height="20" viewbox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="instagram">
+                                        <path d="M13.55,1H6.46C3.45,1,1,3.44,1,6.44v7.12c0,3,2.45,5.44,5.46,5.44h7.08c3.02,0,5.46-2.44,5.46-5.44V6.44 C19.01,3.44,16.56,1,13.55,1z M17.5,14c0,1.93-1.57,3.5-3.5,3.5H6c-1.93,0-3.5-1.57-3.5-3.5V6c0-1.93,1.57-3.5,3.5-3.5h8 c1.93,0,3.5,1.57,3.5,3.5V14z"></path>
+                                        <circle cx="14.87" cy="5.26" r="1.09"></circle>
+                                        <path d="M10.03,5.45c-2.55,0-4.63,2.06-4.63,4.6c0,2.55,2.07,4.61,4.63,4.61c2.56,0,4.63-2.061,4.63-4.61 C14.65,7.51,12.58,5.45,10.03,5.45L10.03,5.45L10.03,5.45z M10.08,13c-1.66,0-3-1.34-3-2.99c0-1.65,1.34-2.99,3-2.99s3,1.34,3,2.99 C13.08,11.66,11.74,13,10.08,13L10.08,13L10.08,13z"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="uk-text-center uk-padding uk-padding-remove-horizontal">
+                <span class="uk-text-small uk-text-muted">© 2022 3D nyomtatás - Az oldalt készítette: 3dconcept.hu
+                    <p>Az oldalon nincs adatkezelés, sem cookie használat.</p>
+                </span>
+            </div>
+        </footer>
+
+        <script src="{{ url }}assets/js/main.js"></script>
+
+        {% block js %}{% endblock %}
+
+    </body>
+</html>

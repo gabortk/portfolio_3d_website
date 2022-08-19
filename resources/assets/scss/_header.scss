@@ -1,0 +1,14 @@
+.main-header {
+    ul {
+        li {
+            a {
+                text-transform: uppercase;
+                font-size: 1.2rem;
+                color: $primary-color;
+                &:hover {
+                    color: $white;
+                }
+            }
+        }
+    }
+}

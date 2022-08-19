@@ -1,0 +1,31 @@
+{
+  "name": "portfolio_3d_website",
+  "version": "1.0.0",
+  "description": "portfolio_3d_website",
+  "main": "index.js",
+  "scripts": {
+    "webpack-build": "webpack",
+    "watch": "sass --watch resources/assets/scss/main.scss public/assets/css/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabortk/portfolio_3d_website.git"
+  },
+  "keywords": [
+    "zagsjkdld"
+  ],
+  "author": "gabortk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gabortk/portfolio_3d_website/issues"
+  },
+  "homepage": "https://github.com/gabortk/portfolio_3d_website#readme",
+  "dependencies": {
+    "sass": "^1.45.0",
+    "uikit": "^3.9.4"
+  },
+  "devDependencies": {
+    "webpack": "^5.65.0",
+    "webpack-cli": "^4.9.1"
+  }
+}
