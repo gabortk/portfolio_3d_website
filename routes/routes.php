@@ -16,7 +16,7 @@ $router->get('/test/{slug}/{id}', 'TestController@testTwo');
 
 $router->get('/rolunk', 'PageController@renderAbout');
 
-$router->get('/szolgaltatasok', 'PageController@renderServices');
+$router->get('/termekek', 'PageController@renderServices'); /*szolgáltatások=termékek*/
 
 $router->get('/anyagok', 'PageController@renderMaterials');
 
